@@ -8,8 +8,10 @@ end
 
 planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
 def summon_captain_planet(planeteer_calls)
-binding.pry
-  planeteer_calls.map { |element| element.capitalize +"!"}
+  planeteer_calls.map do |element| 
+    binding.pry
+    element.capitalize + "!"
+  end
 end
 
 def long_planeteer_calls(calls)
