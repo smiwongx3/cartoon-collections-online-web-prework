@@ -10,6 +10,7 @@ planeteer_calls = ["earth", "wind", "fire", "water", "heart"]
 def summon_captain_planet(planeteer_calls)
   planeteer_calls.map { |element| element.capitalize +"!"}
 end
+summon_captain_planet
 
 def long_planeteer_calls(calls)
   calls.any? do |word|
