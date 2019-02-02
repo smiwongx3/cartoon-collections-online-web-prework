@@ -1,3 +1,5 @@
+require'pry'
+
 def roll_call_dwarves(dwarf_names)
   dwarf_names.each.with_index(1) do |dwarf_names, index|
     puts "#{index}. #{dwarf_names}"
@@ -5,6 +7,7 @@ def roll_call_dwarves(dwarf_names)
 end
 
 def summon_captain_planet(planeteer_calls)
+  binding.pry
   planeteer_calls.map { |element| element.capitalize +"!"}
 end
 
